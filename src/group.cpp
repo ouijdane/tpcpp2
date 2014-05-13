@@ -12,7 +12,7 @@ Group::~Group()
 
 void Group::display()
 {
-    for (int i(0) ; i < shapes.size(); i++)
+    for (unsigned int i(0) ; i < shapes.size(); i++)
     {
         shapes[i]->display();
     }
@@ -21,7 +21,7 @@ void Group::display()
 
 void Group::homothety(Coordinates p,float k)
 {
-    for (int i(0) ; i < shapes.size(); i++)
+    for (unsigned int i(0) ; i < shapes.size(); i++)
     {
         shapes[i]->homothety(p,k);
     }
@@ -29,7 +29,7 @@ void Group::homothety(Coordinates p,float k)
 
 void Group::translate(Coordinates p)
 {
-    for (int i(0) ; i < shapes.size(); i++)
+    for (unsigned int i(0) ; i < shapes.size(); i++)
     {
         shapes[i]->translate(p);
     }
@@ -37,7 +37,7 @@ void Group::translate(Coordinates p)
 float Group::area()
 {
     float areaa= 0;
-    for (int i(0) ; i < shapes.size(); i++)
+    for (unsigned int i(0) ; i < shapes.size(); i++)
     {
         areaa += shapes[i]->area();
     }
