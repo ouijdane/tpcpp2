@@ -14,7 +14,7 @@ class Group : public Shape
         virtual ~Group();
         void translate(Coordinates);
         void homothety(Coordinates,float);
-        void display();
+        void display(std::ostream & flux);
         float area();
 
         void addShape(Shape*);

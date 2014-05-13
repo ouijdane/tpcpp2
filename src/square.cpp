@@ -16,11 +16,11 @@ Square::Square(Coordinates p ,float x) : Shape(p)
     a=x;
 }
 
-void Square::display()
+void Square::display(std::ostream & flux)
 {
-    Shape::display();
+    Shape::display(flux);
 
-    cout << " to be more specific I am a Square with an edge equal to " << a << endl ;
+    flux << " to be more specific I am a Square with an edge equal to " << a << endl ;
 }
 
 void Square::vertices()

@@ -17,10 +17,10 @@ Circle::Circle(Coordinates p ,float x) : Shape(p)
     r=x;
 }
 
-void Circle::display()
+void Circle::display(std::ostream & flux)
 {
-     Shape::display();
-     cout << "to be more specific I am a circle with a radius equal to " << r << endl ;
+     Shape::display(flux);
+     flux << "to be more specific I am a circle with a radius equal to " << r << endl ;
 }
 
 void Circle::homothety(struct Coordinates p,float k)

@@ -26,9 +26,9 @@ Shape::Shape(Coordinates p, float orientation)
     this->orientation = orientation;
 }
 
-void Shape::display()
+void Shape::display(std::ostream &flux)
 {
-    cout << "A geometrical shape at the position defined by  (" << pos.getAbs()<<","<<pos.getOrd()<<")" << endl;
+    flux << "A geometrical shape at the position defined by  (" << pos.getAbs()<<","<<pos.getOrd()<<")" << endl;
 }
 
 void Shape::translate(Coordinates p)
@@ -60,3 +60,4 @@ void Shape::rotate(Coordinates origin , float alpha) {
 	orientation = alpha;
 	pos = Coordinates(pos.distance(origin)*cos(alpha) , pos.distance(origin) * sin(alpha));
 }
+

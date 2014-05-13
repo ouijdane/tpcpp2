@@ -7,6 +7,17 @@
 
 using namespace std;
 
+
+std::ostream & operator <<(std::ostream& flux , Shape * shape ) {
+	shape->display(flux);
+	return flux;
+}
+
+std::ostream & operator<<(std::ostream& flux , Group & group ) {
+	group.display(flux);
+	return flux;
+}
+
 int main()
 {
 
@@ -14,18 +25,18 @@ int main()
     Coordinates M(2,3),H(5,2),K(0,0);
 
     Circle *c = new Circle(M,4);
-    c->display ();
+    cout << c;
     c->area();
     c->homothety(H,3);
-    c->display();
+    cout <<c ;
     c->translate(H);
-    c->display();
+    cout <<c;
 
     Square *S = new Square(K,3);
     S->translate(M);
-    S->display();
+    cout << S;
     S->homothety(H,2);
-    S->display();
+    cout << S ;
     S->area();
     S->vertices();
 
@@ -35,9 +46,9 @@ int main()
     G.addShape(S);
     G.addShape(c);
     G.area();
-    G.display();
+    cout << G;
     G.homothety(M,2);
-    G.display();
+    cout << G;
 
     delete S;
     delete c;

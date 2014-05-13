@@ -13,7 +13,7 @@ public:
     Square();
     virtual ~Square();
     Square(Coordinates, float); //initializes the square
-    void display();  //displays informations about the square
+    void display(std::ostream & flux);  //displays informations about the square
     void vertices(); //displays the coordinates of each vertex of the square
     void homothety(Coordinates, float); //Homothtie -_-
 

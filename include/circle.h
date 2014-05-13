@@ -12,7 +12,7 @@ class Circle : public Shape
         Circle(); //constructor
         virtual ~Circle(); //destructor
         Circle (Coordinates, float); // intitializes the Circle
-        void display();  //displays informations about the Circle
+        void display(std::ostream & flux);  //displays informations about the Circle
         void homothety(Coordinates, float); //Homothtie -_-
         float area(); // calculate the area of the Circle
 

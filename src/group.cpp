@@ -10,11 +10,11 @@ Group::~Group()
 //dtor
 }
 
-void Group::display()
+void Group::display(std::ostream & stream)
 {
     for (unsigned int i(0) ; i < shapes.size(); i++)
     {
-        shapes[i]->display();
+        shapes[i]->display(stream);
     }
 
 }
