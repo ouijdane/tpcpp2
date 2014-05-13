@@ -54,6 +54,10 @@ Coordinates Coordinates::operator +(Coordinates  coordinates) {
 	return Coordinates(this->abs + coordinates.getAbs(),this->ord + coordinates.getOrd());
 }
 
+float Coordinates::distance(Coordinates c) {
+	return sqrt(sqr(this->abs - c.abs) + sqr(this->ord -c.ord));
+}
+
 Coordinates Coordinates::operator *(float k) {
 	return Coordinates(this->abs*k,this->ord*k);
 }

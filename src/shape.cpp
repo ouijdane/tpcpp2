@@ -6,6 +6,7 @@ using namespace std;
 Shape::Shape()
 {
     //ctor
+	orientation = 0;
 }
 
 Shape::~Shape()
@@ -16,6 +17,13 @@ Shape::~Shape()
 Shape::Shape(Coordinates p)
 {
     pos = p;
+    orientation = 0;
+}
+
+Shape::Shape(Coordinates p, float orientation)
+{
+    pos = p;
+    this->orientation = orientation;
 }
 
 void Shape::display()
@@ -46,4 +54,9 @@ void Shape::homothety(float x, float y ,float k)
     Coordinates p(x,y);
 
     this->homothety(p,k);
+}
+
+void Shape::rotate(Coordinates origin , float alpha) {
+	orientation = alpha;
+	pos = Coordinates(pos.distance(origin)*cos(alpha) , pos.distance(origin) * sin(alpha));
 }

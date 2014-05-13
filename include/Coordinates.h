@@ -5,6 +5,8 @@
  *      Author: Dhia - Ouijdane
  */
 #include <iostream>
+#include <cmath>
+#define sqr(a) a*a
 
 
 #ifndef COORDINATES_H_
@@ -22,6 +24,7 @@ public:
 	float getOrd() const;
 	void setOrd(float ord);
 	std::string display();
+	float distance(Coordinates c);
 
 	void operator+= (Coordinates);
 	Coordinates operator- (Coordinates );
