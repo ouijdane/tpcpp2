@@ -13,44 +13,37 @@ Shape::~Shape()
     //dtor
 }
 
-Shape::Shape(point p)
+Shape::Shape(Coordinates p)
 {
-    pos.abs=p.abs;
-    pos.ord=p.ord;
+    pos = p;
 }
 
 void Shape::display()
 {
-    cout << "A geometrical shape at the position defined by  (" << pos.abs<<","<<pos.ord<<")" << endl;
+    cout << "A geometrical shape at the position defined by  (" << pos.getAbs()<<","<<pos.getOrd()<<")" << endl;
 }
 
-void Shape::translate(point p)
+void Shape::translate(Coordinates p)
 {
-    pos.abs+=p.abs;
-    pos.ord+=p.ord;
+    pos+=p;
     cout << "translation proceeded with sucess !! hallelujah " << endl ;
 }
 
 void Shape::translate(float x , float y){
-    point p;
-    p.abs = x ;
-    p.ord = y;
+    Coordinates p(x,y);
 
     this->translate(p);
 }
 
-void Shape::homothety(point p ,float k)
+void Shape::homothety(Coordinates p ,float k)
 {
-    pos.abs=(pos.abs-p.abs)*k-p.abs;
-    pos.ord=(pos.ord-p.ord)*k-p.ord;
-    cout << " homothety proceeded with sucess !! :p " << endl ;
+	pos = (pos-p)*k -p;
+	cout << " homothety proceeded with sucess !! :p " << endl ;
 }
 
 void Shape::homothety(float x, float y ,float k)
 {
-    point p;
-    p.abs = x;
-    p.ord = y;
+    Coordinates p(x,y);
 
     this->homothety(p,k);
 }

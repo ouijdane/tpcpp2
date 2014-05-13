@@ -12,7 +12,7 @@ Circle::~Circle()
     //dtor
 }
 
-Circle::Circle(point p ,float x) : Shape(p)
+Circle::Circle(Coordinates p ,float x) : Shape(p)
 {
     r=x;
 }
@@ -23,7 +23,7 @@ void Circle::display()
      cout << "to be more specific I am a circle with a radius equal to " << r << endl ;
 }
 
-void Circle::homothety(struct point p,float k)
+void Circle::homothety(struct Coordinates p,float k)
 {
      Shape::homothety(p, k);
      r=abs(k)*r;

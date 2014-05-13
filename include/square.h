@@ -7,15 +7,15 @@
 class Square : public Shape
 {
 private:
-    float a;//arete
+    float a;//edge
 
 public:
     Square();
     virtual ~Square();
-    Square(point, float); //initializes the square
+    Square(Coordinates, float); //initializes the square
     void display();  //displays informations about the square
     void vertices(); //displays the coordinates of each vertex of the square
-    void homothety(point, float); //Homothtie -_-
+    void homothety(Coordinates, float); //Homothtie -_-
 
     float area(); //calculates the area of the Square
 };

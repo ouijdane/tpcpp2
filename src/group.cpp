@@ -10,8 +10,6 @@ Group::~Group()
 //dtor
 }
 
-
-
 void Group::display()
 {
     for (int i(0) ; i < shapes.size(); i++)
@@ -21,7 +19,7 @@ void Group::display()
 
 }
 
-void Group::homothety(point p,float k)
+void Group::homothety(Coordinates p,float k)
 {
     for (int i(0) ; i < shapes.size(); i++)
     {
@@ -29,7 +27,7 @@ void Group::homothety(point p,float k)
     }
 }
 
-void Group::translate(point p)
+void Group::translate(Coordinates p)
 {
     for (int i(0) ; i < shapes.size(); i++)
     {
@@ -52,26 +50,9 @@ void Group::addShape(Shape* shape){
 
 void Group::deleteShape(int p){
     shapes.erase(shapes.begin()+p);
-
 }
 
 int Group::shapesCount(){
-
     return shapes.size();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

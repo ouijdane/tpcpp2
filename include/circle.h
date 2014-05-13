@@ -11,10 +11,9 @@ class Circle : public Shape
     public:
         Circle(); //constructor
         virtual ~Circle(); //destructor
-        Circle (point , float); // intitializes the Circle
+        Circle (Coordinates, float); // intitializes the Circle
         void display();  //displays informations about the Circle
-        void homothety( point,float); //Homothtie -_-
-        //void homothety(float x, float y ,float k)
+        void homothety(Coordinates, float); //Homothtie -_-
         float area(); // calculate the area of the Circle
 
 };

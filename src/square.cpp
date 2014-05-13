@@ -11,7 +11,7 @@ Square::~Square()
     //dtor
 }
 
-Square::Square(point p ,float x) : Shape(p)
+Square::Square(Coordinates p ,float x) : Shape(p)
 {
     a=x;
 }
@@ -25,35 +25,28 @@ void Square::display()
 
 void Square::vertices()
 {
-    point vertice[4];
-    vertice[0].abs = pos.abs+a/2;
-    vertice[0].ord = pos.ord+a/2;
-
-    vertice[1].abs = pos.abs-a/2;
-    vertice[1].ord = pos.ord+a/2;
-
-    vertice[2].abs = pos.abs-a/2;
-    vertice[2].ord = pos.ord-a/2;
-
-    vertice[3].abs = pos.abs-a/2;
-    vertice[3].ord = pos.ord+a/2;
+    Coordinates vertice[4];
+    vertice[0] = pos + Coordinates(a/2, a/2);
+    vertice[1] = pos + Coordinates(-a/2, a/2);
+    vertice[2] = pos + Coordinates(-a/2, -a/2);
+    vertice[3] = pos + Coordinates(a/2, -a/2);
 
     cout << " the coordinates of the vertices of the Square are ";
     for (int i(0) ; i<4 ; i++)
-        cout <<"    ("<< vertice[i].abs<<","<<vertice[i].ord<<")"<< endl;
+        cout <<vertice[i].display()<< endl;
 
 }
 
-void Square::homothety(struct point p,float k)
+void Square::homothety(struct Coordinates p,float k)
 {
-    Shape::homothety( p,k);
+    Shape::homothety(p,k);
     a=abs(k)*a;
 }
 
 float Square::area()
 {
     float areaa=a*a;
-    return areaa ;
+    return areaa;
     // cout << "I am a Square with the surface equal to "<< A<<endl;
 }
 
