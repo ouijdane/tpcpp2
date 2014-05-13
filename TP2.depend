@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1398978994 source:/home/wejwej/workspace/TP2/main.cpp
+	<iostream>
+	"circle.h"
+	"shape.h"
+
+1398977757 source:/home/wejwej/workspace/TP2/src/shape.cpp
+	"shape.h"
+	<iostream>
+
+1398974741 /home/wejwej/workspace/TP2/include/shape.h
+
+1398975096 source:/home/wejwej/workspace/TP2/src/circle.cpp
+	"circle.h"
+	<iostream>
+	<cmath>
+
+1398979211 /home/wejwej/workspace/TP2/include/circle.h
+	<shape.h>
+
+1399993842 source:/home/wejwej/workspace/cpp/TP2/src/circle.cpp
+	<iostream>
+	"circle.h"
+
+1399993550 /home/wejwej/workspace/cpp/TP2/include/circle.h
+	"shape.h"
+
+1399987420 /home/wejwej/workspace/cpp/TP2/include/shape.h
+	<cmath>
+
+1399993998 source:/home/wejwej/workspace/cpp/TP2/src/shape.cpp
+	<iostream>
+	"shape.h"
+
+1399991643 source:/home/wejwej/workspace/cpp/TP2/main.cpp
+	<iostream>
+	<stdlib.h>
+	"shape.h"
+	"square.h"
+	"circle.h"
+
+1399994030 source:/home/wejwej/workspace/cpp/TP2/src/square.cpp
+	"square.h"
+	<iostream>
+	<cmath>
+
+1399991837 /home/wejwej/workspace/cpp/TP2/include/square.h
+	<shape.h>
+
+1399994094 source:/home/wejwej/workspace/cpp/TP2/src/group.cpp
+	"group.h"
+
+1399993925 /home/wejwej/workspace/cpp/TP2/include/group.h
+	<vector>
+	<shape.h>
+
