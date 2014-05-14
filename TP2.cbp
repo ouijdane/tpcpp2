@@ -35,12 +35,14 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Coordinates.h" />
+		<Unit filename="include/Rectangle.h" />
 		<Unit filename="include/circle.h" />
 		<Unit filename="include/group.h" />
 		<Unit filename="include/shape.h" />
 		<Unit filename="include/square.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Coordinates.cpp" />
+		<Unit filename="src/Rectangle.cpp" />
 		<Unit filename="src/circle.cpp" />
 		<Unit filename="src/group.cpp" />
 		<Unit filename="src/shape.cpp" />
