@@ -29,6 +29,9 @@ void Circle::homothety(struct Coordinates p,float k)
      r=abs(k)*r;
 }
 
+Circle::Circle(float x, float y, float r) : Circle(Coordinates(x,y), r) {
+}
+
 float Circle::area()
 {
      float a=PI*r*r;

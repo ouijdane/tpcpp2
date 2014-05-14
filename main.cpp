@@ -8,15 +8,16 @@
 using namespace std;
 
 
-std::ostream & operator <<(std::ostream& flux , Shape * shape ) {
-	shape->display(flux);
-	return flux;
+std::ostream & operator <<(std::ostream& stream , Shape & shape ) {
+	shape.display(stream);
+	return stream;
 }
 
-std::ostream & operator<<(std::ostream& flux , Group & group ) {
-	group.display(flux);
-	return flux;
+std::ostream & operator<<(std::ostream& stream , Group & group ) {
+	group.display(stream);
+	return stream;
 }
+
 
 int main()
 {
@@ -25,12 +26,12 @@ int main()
     Coordinates M(2,3),H(5,2),K(0,0);
 
     Circle *c = new Circle(M,4);
-    cout << c;
+    cout << *c;
     c->area();
     c->homothety(H,3);
-    cout <<c ;
+    cout <<*c ;
     c->translate(H);
-    cout <<c;
+    cout <<*c;
 
     Square *S = new Square(K,3);
     S->translate(M);
