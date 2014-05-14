@@ -25,7 +25,8 @@
 1399993550 /home/wejwej/workspace/cpp/TP2/include/circle.h
 	"shape.h"
 
-1399987420 /home/wejwej/workspace/cpp/TP2/include/shape.h
+1400081986 /home/wejwej/workspace/cpp/TP2/include/shape.h
+	"Coordinates.h"
 	<cmath>
 
 1399993998 source:/home/wejwej/workspace/cpp/TP2/src/shape.cpp
@@ -47,10 +48,14 @@
 1399991837 /home/wejwej/workspace/cpp/TP2/include/square.h
 	<shape.h>
 
-1399994094 source:/home/wejwej/workspace/cpp/TP2/src/group.cpp
+1400018638 source:/home/wejwej/workspace/cpp/TP2/src/group.cpp
 	"group.h"
 
-1399993925 /home/wejwej/workspace/cpp/TP2/include/group.h
+1400081982 /home/wejwej/workspace/cpp/TP2/include/group.h
 	<vector>
 	<shape.h>
+
+1400081986 /home/wejwej/workspace/cpp/TP2/include/Coordinates.h
+	<iostream>
+	<cmath>
 
