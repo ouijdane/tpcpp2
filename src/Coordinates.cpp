@@ -39,9 +39,9 @@ std::string Coordinates::display() {
 	std::string s= "( ";
 	s += ss.str();
 	s += " , ";
-	ss.flush();
-	ss<<ord;
-	s += ss.str() ;
+	std::ostringstream ss2;
+	ss2<<ord;
+	s += ss2.str() ;
 	s += " )";
  	return  s;
 }
