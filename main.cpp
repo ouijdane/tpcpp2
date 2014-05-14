@@ -25,6 +25,12 @@ int main()
     cout << "Hello world!" << endl;
     Coordinates M(2,3),H(5,2),K(0,0);
 
+    Square squ (Coordinates(4,4) , Coordinates(2,2));
+    cout <<squ;
+    squ.vertices();
+    squ.rotate(90);
+    squ.vertices();
+/*
     Circle *c = new Circle(M,4);
     cout << *c;
     c->area();
@@ -52,7 +58,7 @@ int main()
     cout << G;
 
     delete S;
-    delete c;
+    delete c;*/
 
     return 0;
 

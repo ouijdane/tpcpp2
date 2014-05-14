@@ -61,3 +61,6 @@ void Shape::rotate(Coordinates origin , float alpha) {
 	pos = Coordinates(pos.distance(origin)*cos(alpha) , pos.distance(origin) * sin(alpha));
 }
 
+void Shape::rotate(float alpha) {
+	orientation = alpha;
+}

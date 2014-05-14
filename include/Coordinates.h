@@ -30,6 +30,7 @@ public:
 	Coordinates operator- (Coordinates );
 	Coordinates operator+ (Coordinates );
 	Coordinates operator* (float k);
+	Coordinates operator/ (float k);
 };
 
 #endif /* COORDINATES_H_ */

@@ -23,6 +23,7 @@ class Shape
         virtual void homothety(Coordinates,float); //Homothtie -_-
         virtual void homothety(float x, float y ,float k);
         virtual void rotate (Coordinates origin, float alpha);
+        virtual void rotate (float alpha);
         virtual float area() =0 ; // calculates the surface occupied by the geometrical shape //supposed to be pure virtual -_-
 
 };

@@ -6,6 +6,7 @@
  */
 
 #include "Coordinates.h"
+#include <sstream>
 
 Coordinates::Coordinates() : abs(0), ord(0) {
 }
@@ -33,10 +34,14 @@ void Coordinates::setOrd(float ord) {
 }
 
 std::string Coordinates::display() {
+	std::ostringstream ss;
+	ss << abs;
 	std::string s= "( ";
-	s += abs;
+	s += ss.str();
 	s += " , ";
-	s += ord ;
+	ss.flush();
+	ss<<ord;
+	s += ss.str() ;
 	s += " )";
  	return  s;
 }
@@ -60,4 +65,8 @@ float Coordinates::distance(Coordinates c) {
 
 Coordinates Coordinates::operator *(float k) {
 	return Coordinates(this->abs*k,this->ord*k);
+}
+
+Coordinates Coordinates::operator /(float k) {
+	return Coordinates(this->abs/k, this->ord/k);
 }

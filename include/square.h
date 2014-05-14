@@ -1,23 +1,21 @@
 #ifndef SQUARE_H
 #define SQUARE_H
 
-#include <shape.h>
+#include "Rectangle.h"
 
 
-class Square : public Shape
+class Square : public Rectangle
 {
 private:
-    float a;//edge
 
 public:
     Square();
     virtual ~Square();
     Square(Coordinates, float); //initializes the square
-    void display(std::ostream & flux);  //displays informations about the square
-    void vertices(); //displays the coordinates of each vertex of the square
-    void homothety(Coordinates, float); //Homothtie -_-
+    Square(Coordinates, Coordinates);
 
-    float area(); //calculates the area of the Square
+    void display(std::ostream & flux);  //displays informations about the square
+
 };
 
 
