@@ -59,3 +59,58 @@
 	<iostream>
 	<cmath>
 
+1400066626 source:/home/dhia/workspace/eclipse/Cpp/TPs/TP02 shapes/main.cpp
+	<iostream>
+	<stdlib.h>
+	"shape.h"
+	"square.h"
+	"circle.h"
+	"group.h"
+
+1400415421 /home/dhia/workspace/eclipse/Cpp/TPs/TP02 shapes/include/shape.h
+	"Coordinates.h"
+	<cmath>
+	<iostream>
+
+1400064511 /home/dhia/workspace/eclipse/Cpp/TPs/TP02 shapes/include/Coordinates.h
+	<iostream>
+	<cmath>
+
+1400066410 /home/dhia/workspace/eclipse/Cpp/TPs/TP02 shapes/include/square.h
+	"Rectangle.h"
+
+1400066045 /home/dhia/workspace/eclipse/Cpp/TPs/TP02 shapes/include/Rectangle.h
+	<shape.h>
+
+1400061312 /home/dhia/workspace/eclipse/Cpp/TPs/TP02 shapes/include/circle.h
+	"shape.h"
+
+1400017142 /home/dhia/workspace/eclipse/Cpp/TPs/TP02 shapes/include/group.h
+	<vector>
+	<shape.h>
+
+1400064679 source:/home/dhia/workspace/eclipse/Cpp/TPs/TP02 shapes/src/circle.cpp
+	<iostream>
+	"circle.h"
+
+1400084045 source:/home/dhia/workspace/eclipse/Cpp/TPs/TP02 shapes/src/Coordinates.cpp
+	"Coordinates.h"
+	<sstream>
+
+1400017172 source:/home/dhia/workspace/eclipse/Cpp/TPs/TP02 shapes/src/group.cpp
+	"group.h"
+
+1400066094 source:/home/dhia/workspace/eclipse/Cpp/TPs/TP02 shapes/src/Rectangle.cpp
+	"Rectangle.h"
+	<iostream>
+	<cmath>
+
+1400063127 source:/home/dhia/workspace/eclipse/Cpp/TPs/TP02 shapes/src/shape.cpp
+	<iostream>
+	"shape.h"
+
+1400066455 source:/home/dhia/workspace/eclipse/Cpp/TPs/TP02 shapes/src/square.cpp
+	"square.h"
+	<iostream>
+	<cmath>
+

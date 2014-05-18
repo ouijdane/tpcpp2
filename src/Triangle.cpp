@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Triangle.h"
 
 
@@ -46,7 +47,7 @@ void Triangle::vertices()
 }
 
 
-void Triangle::homothety(struct Coordinates p,float k)
+void Triangle::homothety(Coordinates p,float k)
 {
     Shape::homothety(p,k);
     my_side=abs(k)*my_side;
@@ -67,5 +68,7 @@ float Triangle::area()
 {
     float areaa=sqr(my_side)*sqrt(3)/4;
     return areaa;
+}
 
+Triangle::~Triangle(){
 }

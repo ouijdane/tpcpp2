@@ -17,11 +17,8 @@ class Triangle : public Shape
         Triangle(Coordinates, float);
 
         void vertices();
-         void display(std::ostream & flux);
-        void translate(Coordinates);
-        void translate(float x , float y);
+        void display(std::ostream & flux);
         void homothety(Coordinates,float);
-        void homothety(float x, float y ,float k);
         void rotate (Coordinates origin, float alpha);
         void rotate (float alpha);
         float area() ;
