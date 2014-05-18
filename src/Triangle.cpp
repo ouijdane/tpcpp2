@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Triangle.h"
 
-
+using namespace std;
 Triangle::Triangle(): my_side(0)
 {
         my_vertex[0]= Coordinates( pos.getAbs()           , pos.getOrd()+(sqrt(3)/3)*my_side);
@@ -17,7 +17,7 @@ Triangle::Triangle(Coordinates v1, Coordinates v2)
 
     my_vertex[0]=v1;
     my_vertex[1]=v2;
-//    my_vertix[2]= ;
+    //my_vertex[2]= Coordinates( , ) ;
 
 }
 
@@ -41,7 +41,7 @@ void Triangle::display(std::ostream & flux)
 
 void Triangle::vertices()
 {
-    cout << " the coordinates of the vertices of the Triangle are " << endl;
+    cout << " The coordinates of the vertices of the Triangle are " << endl;
     for (int i(0) ; i<3 ; i++)
         cout << my_vertex[i].display()<< endl;
 }

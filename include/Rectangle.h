@@ -1,8 +1,7 @@
 /*
  * Rectangle.h
  *
- *  Created on: May 14, 2014
- *      Author: dhia
+ * This object represents a Rectangle. It inherits from Shape
  */
 
 #ifndef RECTANGLE_H_
@@ -18,16 +17,16 @@ protected:
 
 public:
     Rectangle();
-    Rectangle(Coordinates, float,float); //initializes the rectangle
-    Rectangle(Coordinates, Coordinates);
+    Rectangle(Coordinates, float,float); 		//initializes the rectangle based on the coordinates of its center and the length and width of its edges
+    Rectangle(Coordinates, Coordinates);		//initializes the rectangle based on the coordinates of its two corners
 
     virtual void display(std::ostream & flux);  //displays informations about the rectangle
-    virtual void vertices(); //displays the coordinates of each vertex of the rectangle
-    virtual void homothety(Coordinates, float); //Homothtie -_-
-    virtual void rotate (Coordinates ,float alpha);
-    virtual void rotate (float alpha);
-    virtual float area(); //calculates the area of the
-    virtual float perimetr();
+    virtual void vertices(); 					//displays the coordinates of each vertex of the rectangle
+    virtual void homothety(Coordinates, float); //Homothety
+    virtual void rotate (Coordinates ,float alpha);	//Rotates the rectangle by alpha. where the first argument represents the center of the rotation
+    virtual void rotate (float alpha);			//rotates the rectangle around itself by alpha degrees
+    virtual float area(); 						//calculates the area of the rectangle
+    virtual float perimetr();					//calculates the perimeter of the rectangle
 };
 
 #endif /* RECTANGLE_H_ */

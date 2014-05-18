@@ -3,6 +3,9 @@
  *
  *  Created on: May 13, 2014
  *      Author: Dhia - Ouijdane
+ *
+ *  Role :
+ *  	This file defines the object Coordinates. It represents cartesian coordinates of a point in 2D space
  */
 #include <iostream>
 #include <cmath>
@@ -17,15 +20,16 @@ private:
 	float abs, ord;
 public:
 	Coordinates();
-	Coordinates(float abs, float ord);
+	Coordinates(float abs, float ord);	//Initializes the object with coordinates (abs,ord)
 	virtual ~Coordinates();
 	float getAbs() const;
 	void setAbs(float abs);
 	float getOrd() const;
 	void setOrd(float ord);
-	std::string display();
-	float distance(Coordinates c);
+	std::string display();				//Displays information about the coordinate
+	float distance(Coordinates c);		//Calculates distance between two points
 
+	//overriding operators
 	void operator+= (Coordinates);
 	Coordinates operator- (Coordinates );
 	Coordinates operator+ (Coordinates );
