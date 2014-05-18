@@ -1,3 +1,6 @@
+/*
+ * group.cpp
+ */
 #include "group.h"
 
 Group::Group()

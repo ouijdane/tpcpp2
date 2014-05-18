@@ -1,4 +1,6 @@
 /*
+ * square.h
+ *
  * This object represents a square. It inherits from Rectangle
  */
 

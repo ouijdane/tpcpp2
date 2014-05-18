@@ -1,4 +1,6 @@
 /*
+ * triangle.h
+ *
  * The object Triangle represents an equilateral triangle. It inherits from Shape
  */
 

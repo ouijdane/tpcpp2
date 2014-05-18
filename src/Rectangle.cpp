@@ -2,7 +2,7 @@
  * Rectangle.cpp
  *
  *  Created on: May 14, 2014
- *      Author: dhia
+ *      Author: Dhia & Ouijdane
  */
 
 #include "Rectangle.h"

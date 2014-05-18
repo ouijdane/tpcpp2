@@ -1,3 +1,6 @@
+/*
+ * Triangle.cpp
+ */
 #include <iostream>
 #include "Triangle.h"
 
