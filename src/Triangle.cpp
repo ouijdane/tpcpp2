@@ -13,8 +13,8 @@ Triangle::Triangle(Coordinates v1, Coordinates v2)
 {
     my_side = v1.distance(v2);
     Coordinates mid = (v1+v2)/2;
-    pos.setAbs((sqrt(3)/3)*my_side + mid.getAbs());
-    pos.setOrd((sqrt(3)/3)*my_side +mid.getOrd());
+    pos =Coordinates((sqrt(3)/3)*my_side + mid.getAbs() , (sqrt(3)/3)*my_side +mid.getOrd());
+
     my_vertex[0]=v1;
     my_vertex[1]=v2;
 //    my_vertix[2]= ;
@@ -66,9 +66,16 @@ void Triangle::rotate(float alpha) {
 
 float Triangle::area()
 {
-    float areaa=sqr(my_side)*sqrt(3)/4;
+    float areaa = sqr(my_side)*sqrt(3)/4;
     return areaa;
 }
 
-Triangle::~Triangle(){
+Triangle::~Triangle()
+{
+}
+
+float Triangle::perimetr()
+{
+    float p= 3*my_side;
+    return p;
 }

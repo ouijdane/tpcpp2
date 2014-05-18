@@ -16,7 +16,7 @@ class Circle : public Shape
         void display(std::ostream & flux);  //displays informations about the Circle
         void homothety(Coordinates, float); //Homothtie -_-
         float area(); // calculate the area of the Circle
-
+        float perimetr();
 };
 
 #endif // CIRCLE_H

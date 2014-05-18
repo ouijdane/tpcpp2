@@ -16,6 +16,7 @@ class Group : public Shape
         void homothety(Coordinates,float);
         void display(std::ostream & flux);
         float area();
+        float perimetr();
 
         void addShape(Shape*);
         int shapesCount();

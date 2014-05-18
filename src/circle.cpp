@@ -40,3 +40,8 @@ float Circle::area()
      //cout <<"Im a circle with an area equal to "<<A <<endl;
 }
 
+float Circle::perimetr()
+{
+    float p=2*PI*r;
+    return p;
+}

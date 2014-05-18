@@ -26,7 +26,8 @@ public:
     virtual void homothety(Coordinates, float); //Homothtie -_-
     virtual void rotate (Coordinates ,float alpha);
     virtual void rotate (float alpha);
-    virtual float area(); //calculates the area of the Square
+    virtual float area(); //calculates the area of the
+    virtual float perimetr();
 };
 
 #endif /* RECTANGLE_H_ */

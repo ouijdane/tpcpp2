@@ -22,6 +22,7 @@ class Triangle : public Shape
         void rotate (Coordinates origin, float alpha);
         void rotate (float alpha);
         float area() ;
+        float perimetr();
 
 };
 

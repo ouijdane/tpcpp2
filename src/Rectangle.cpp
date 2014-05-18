@@ -90,4 +90,9 @@ float Rectangle::area()
     // cout << "I am a Rectangle with the surface equal to "<< A<<endl;
 }
 
+float Rectangle::perimetr()
+{
+    float p=2*(my_length+my_width);
+    return p;
+}
 

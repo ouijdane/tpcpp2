@@ -44,6 +44,18 @@ float Group::area()
     return areaa;
 }
 
+float Group::perimetr()
+{
+    float p= 0;
+    for (unsigned int i(0) ; i < shapes.size(); i++)
+    {
+        p += shapes[i]-> perimetr();
+    }
+    return p;
+
+}
+
+
 void Group::addShape(Shape* shape){
     shapes.push_back(shape);
 }
