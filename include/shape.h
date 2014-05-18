@@ -3,7 +3,10 @@
 
 #include "Coordinates.h"
 #include <cmath>
+#include <iostream>
 #define PI M_PI
+
+using namespace std;
 
 class Shape
 {
